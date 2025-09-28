@@ -1,0 +1,82 @@
+/*全体*/
+body {
+    background: linear-gradient(135deg, #ff91d9, #f3ded2);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*中央の白い所*/
+.register-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    width: 380px;
+}
+
+/*タイトル*/
+.register-container h1 {
+    font-size: 2rem;
+    color: (#ff91d9);
+    margin-bottom: 0.5rem;
+}
+
+.register-container p {
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/*入力欄*/
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 0.6rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/*エラー*/
+.error {
+    color: red;
+    font-size: 0.85rem;
+    text-align: left;
+    margin-top: -0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+/*ボタン*/
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #c190e9, #f773c9);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-container button:hover {
+    opacity: 0.9;
+}
+
+.register-container .link {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: hsl(218, 84%, 70%);
+    text-decoration: none;
+}
+
+.register-container .link:hover {
+    text-decoration: underline;
+}

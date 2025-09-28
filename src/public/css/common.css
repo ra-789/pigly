@@ -1,0 +1,145 @@
+/*全体*/
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.header_heading {
+    font-size: 1.5rem;
+    color: #ff91d9;
+    font-weight: bold;
+}
+
+/*ログアウト*/
+.header form button {
+    background: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.header form button:hover {
+    background: #ddd;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.stat-card .value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/*検索エリア*/
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-box input,
+.search-box button {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    background: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #333;
+}
+
+/*データ追加*/
+.add-btn {
+    background: #ec4899;
+    /* ピンク */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.add-btn:hover {
+    background: #db2777;
+}
+
+/*テーブル*/
+.table-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid #eee;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+
+.pagination a {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    background: #f3f4f6;
+    text-decoration: none;
+    color: #555;
+}
+
+.pagination a.active {
+    background: #ec4899;
+    color: white;
+}
